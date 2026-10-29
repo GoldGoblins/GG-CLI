@@ -38,8 +38,9 @@ eller pengar som kan tas ut eller användas på ett publikt nätverk.
 
 Packa upp plattformens källpaket och kör dess uttryckliga bootstrap enligt
 [terminalens README](../support/gg-cli/README.md). Ingen nod startas av en
-vanlig statusläsning. Installationen och Pythonkörningen på en fysisk
-Termuxtelefon måste fortfarande verifieras där.
+vanlig statusläsning. Den uppdaterade transporten måste återprovas på den
+fysiska Termuxtelefonen; en tidigare lyckad anslutning är inte ett godkänt
+tokencirkelprov för denna version.
 
 Windows är koordinator. I Desktop öppnas DAGoblin och LAN-inställningen.
 Starta parning och spara den publika bootstrapfilen till Linux och telefonen.
@@ -47,17 +48,23 @@ Välj före start **Tillåt privata GG-LAN-testtokens** om tokenprovet ska köra
 Filen innehåller koordinatorns publika identitet och endpoint, inga privata
 nycklar. Nycklar lever bara under processen: en omstart kräver ny parning.
 
-Linux och telefonen kör respektive egen foregroundprocess med bootstrapfilen.
-Exempel från den uppackade paketmappen:
+På Linux med full GG-W Desktop öppnas samma DAGoblin → LAN-dialog.
+Ange nodnamn, välj **Tillåt privata GG-LAN-testtokens** om provet ska köras
+och klicka **Anslut med publik bootstrap…**. Läs filen som Windows sparade.
+Starta ingen extra koordinator på Linux. Appen annonserar sin signerade
+inbjudan till Windows och visar den anslutna peerens graf i Desktop.
+
+Telefonen kör sin egen foregroundprocess med bootstrapfilen bredvid
+`gg-cli.py`. Exempel från GG-CLI-mappen i Termux:
 
 ```sh
-python3 gg-cli.py --foreground --command "lan.start label=Linux allow_test_tokens=true" --bootstrap-file gg-lan-bootstrap.json --invite-out gg-lan-linux.json
+python gg-cli.py --foreground --command "lan.start label=Termux allow_test_tokens=true auto_produce=false" --bootstrap-file gg-lan-bootstrap.json
 ```
 
-I Termux används samma kommando med `label=Termux` och en annan publik
-inbjudningsfil, till exempel `gg-lan-termux.json`. Om Python heter `python`
-används det namnet. Filerna får inte redan finnas: export skriver aldrig över
-en befintlig fil. Detta är inte ett kommando för lösenord eller privata nycklar.
+Linux CLI är ett valfritt alternativ med `python3` och `label=Linux`.
+`--invite-out` behövs inte för automatisk annonsering. Om en publik inbjudan
+ändå exporteras måste filnamnet vara nytt: export skriver aldrig över en
+befintlig fil. Detta är inte ett kommando för lösenord eller privata nycklar.
 
 Deras lokala IPv4 väljs genom operativsystemets route till koordinatorn;
 ingen manuell IP-inmatning behövs på dessa enheter. Kontrollera kandidaternas
@@ -70,16 +77,19 @@ När alla tre signerade inbjudningar tillåter testtokens kan Windows skapa
 sessionen med testledgern. I samma interaktiva koordinator-CLI används:
 
 ```text
-lan.start label=Windows allow_test_tokens=true
+lan.start label=Windows allow_test_tokens=true auto_produce=false
 lan.export_bootstrap path=gg-lan-bootstrap.json
 lan.status
 lan.session_create distribute=true enable_test_tokens=true
-lan.circle_start duration_ms=10000 batch=16 amount_atomic=1000000
+lan.circle_start duration_ms=10000 batch=1 amount_atomic=1000000
 ```
 
 De andra klienterna startas med bootstrapfilen innan sessionen skapas.
 Kontrollera deras namn i `lan.status`. I Desktop finns motsvarande
-cirkelknapp och en saldorad per peer i LAN-dialogen. `lan.circle_stop`
+cirkelknapp och en saldorad per peer i LAN-dialogen. Börja direkt efter ny
+parning med batch 1 i
+10 sekunder. Desktop har val för batch 1–16 och längd 1–60 sekunder;
+höj batchen först efter ett godkänt gemensamt prov. `lan.circle_stop`
 avbryter provet, medan `lan.stop` eller Ctrl+C stänger hela den egna peeren.
 Ett prov har en gemensam arbetsbudget på högst 60 sekunder, inklusive
 första och sista kvittosynkronisering och nätväntan, samt en fast kvittokvot.
@@ -95,6 +105,21 @@ den autentiserade transporten. Ett godkänt varv kräver att alla tre har
 bekräftat samma kvittokedja. Visad TX/s bygger på faktiskt kvitterade
 testöverföringar och uppmätt tid, med transportens resursgränser kvar.
 Delvis genomförda prov, kvotstopp och saknad synk ska redovisas uttryckligen.
+
+Det första observerade provet på faktisk Windowsdator, Linuxdator och Termuxtelefon
+registrerade 16 signerade testöverföringar men avslutades med fel före ett
+komplett varv. Koordinatorns saldon var Windows 984, Termux 1016 och Linux
+1000 GG-LAN(TEST) vid den observationen, inte den senare sessionens aktuella
+saldon. Detta är ett partiellt resultat med noll kompletta varv,
+inte ett godkänt fysisk-enhetsprov. Efter transportuppdateringen ska alla tre
+egna processer stoppas, uppdateras, startas om och paras på nytt innan provet
+upprepas. Ett källkodspaket ändrar aldrig automatiskt en redan körande nod.
+
+Automatisk förslagsproduktion hålls avstängd under ny parning och tokenprov
+(`auto_produce=false`). Befintliga sessions-, frame- och transportkrediter
+är ändliga och höjs inte. Prototypen ska provas i en ny session; kvotstopp
+hanteras här med helt ny parning i stället för höjda gränser. Ett senare förslagsprov
+kan startas uttryckligen med Producera lokalt eller `lan.produce`.
 
 Desktop visar den aktiva LAN-peerens graf, verkliga peerstatus och egna
 producenter. **Stoppa** avbryter även under parning och belastning; städningen

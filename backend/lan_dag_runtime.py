@@ -23,6 +23,7 @@ MAX_BOOTSTRAP=8192
 PRIVATE_NETWORKS=tuple(ipaddress.ip_network(value) for value in ('10.0.0.0/8','172.16.0.0/12','192.168.0.0/16'))
 COMMANDS={
     'lan.start':{'label','bind_host','port','allowed_cidr','trusted_coordinator','auto_produce','bootstrap','allow_test_tokens'},
+    'lan.join_file':{'path','label','bind_host','port','allow_test_tokens'},
     'lan.status':set(),'lan.invite':set(),'lan.bootstrap':set(),'lan.bundle':set(),'lan.announce':set(),
     'lan.export_bootstrap':{'path'},'lan.export_invite':{'path'},'lan.peer_file':{'path'},
     'lan.pin':{'public_key'},'lan.peer_add':{'invite','host','port'},
@@ -228,7 +229,7 @@ class LanDagRuntime:
                     trusted=coordinator['peer_key'];allowed=bootstrap['allowed_cidr'];route=(coordinator['host'],coordinator['port'])
                 host=options.get('bind_host','auto')
                 if host=='auto':host=auto_bind_host(route)
-                auto_produce=options.get('auto_produce',bootstrap is not None)
+                auto_produce=options.get('auto_produce',False)
                 allow_test_tokens=options.get('allow_test_tokens',False)
                 if type(allow_test_tokens) is not bool:raise ValueError('GG_LAN_OPTION')
                 peer=_api().LanDagPeer(options.get('label','GG LAN node'),host,options.get('port',16120),
@@ -293,6 +294,10 @@ class LanDagRuntime:
         _public_size(args,MAX_PUBLIC_DOCUMENT+2048 if command=='lan.install' else 16384)
         if command=='lan.status':return self.snapshot()
         if command=='lan.start':return self.start(**args)
+        if command=='lan.join_file':
+            options=dict(args)
+            bootstrap=read_public_document(options.pop('path',None),'bootstrap')
+            return self.start(bootstrap=bootstrap,**options)
         if command=='lan.stop':return self.stop()
         with self._control:
             peer=self._owned()
