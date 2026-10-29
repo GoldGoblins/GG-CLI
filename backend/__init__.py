@@ -1,0 +1,1 @@
+"""GG terminal backend namespace."""

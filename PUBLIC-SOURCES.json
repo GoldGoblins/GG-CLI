@@ -1,0 +1,390 @@
+{
+  "schema": "gg.cli.public-projection.v1",
+  "repository_target": "https://github.com/GoldGoblins/GG-CLI",
+  "upstream_source": "https://github.com/GoldGoblins/GG",
+  "scope": "REVIEWED_HEADLESS_SOURCE_ONLY",
+  "physical_three_device_lan_verified": false,
+  "remote_publish_performed": false,
+  "files": {
+    ".gitignore": {
+      "bytes": 264,
+      "sha256": "5c0e17386f5716fadfbf2e6599769715a236e3069629e7087b421d3af8c55721"
+    },
+    "README.md": {
+      "bytes": 5603,
+      "sha256": "3594c7c1db6c3a05abfbcefba769234063d63508540e2a637a24666e63281505"
+    },
+    "backend/__init__.py": {
+      "bytes": 37,
+      "sha256": "41f79b5fcf2fab54b9bbfd86ca3e2c8d5d391f14f913154af16435ebd54b6acf"
+    },
+    "backend/application_paths.py": {
+      "bytes": 6147,
+      "sha256": "695b433dab6b1d1458260c27dd09f460aa9dc557d15861d9d967dde5fa11684c"
+    },
+    "backend/bitcoin_address.py": {
+      "bytes": 1697,
+      "sha256": "31eb666ca15e8c3787cb3af715031da519e9dacae09bf1fd8d776fdce1cfaa39"
+    },
+    "backend/crypto_contract.py": {
+      "bytes": 18049,
+      "sha256": "d64f14a7c33d528b57728b93564cf178504d3e38ad3eed82dadf75b0db8ca5f6"
+    },
+    "backend/crypto_explorer.py": {
+      "bytes": 41180,
+      "sha256": "d3d5160439bce333bd5ffe2c964b540eef235e9fae6fc225857efc9fd51df265"
+    },
+    "backend/crypto_keys.py": {
+      "bytes": 9635,
+      "sha256": "3ebba56ea994d9c7f52b6cb01f1736bbb03d05e15d33ba86e7d95ca9d2b8c33e"
+    },
+    "backend/crypto_pump_accounts.py": {
+      "bytes": 28529,
+      "sha256": "523ac41f016497cc86921ff33303818fafc814ee3be67f46dfb73e51b466ff57"
+    },
+    "backend/domain_merkle.py": {
+      "bytes": 5826,
+      "sha256": "9e78d5a4c997d2f2a7ba7e10a194314f08cd59d8ffb75bfef9a601f269053543"
+    },
+    "backend/gg_block_graph.py": {
+      "bytes": 10935,
+      "sha256": "c4b520fa640c1f04fcd420ac53f47a4eb81c982c9c80b024a2e7cf23e089a984"
+    },
+    "backend/gg_consensus.py": {
+      "bytes": 44641,
+      "sha256": "509271e8c4cf4185140985a644695d66bb1116bb49627469ee9dcfdc96318f6e"
+    },
+    "backend/gg_ed25519.py": {
+      "bytes": 1034,
+      "sha256": "1061f6c6b088770f5b1d6e682c9127d57d066c1332c02b8230b84ed112d376b1"
+    },
+    "backend/gg_lan_dag.py": {
+      "bytes": 60397,
+      "sha256": "66c942f8a0b9c7439ba98bc4702adb0c990a251d5dd410fd797c93678ef96d2a"
+    },
+    "backend/gg_lan_test_tokens.py": {
+      "bytes": 12788,
+      "sha256": "7b6db2b814acccdb87f104121767393fc0bf038703a029b20b474503205c1768"
+    },
+    "backend/gg_parallel_dag.py": {
+      "bytes": 63041,
+      "sha256": "4764ca4069b8a17b0ca100443628354ea1764c25abbab464422c7e06ab1b819f"
+    },
+    "backend/gg_testnet_process.py": {
+      "bytes": 7868,
+      "sha256": "01f3c36900210d14507eda202a40e48b71249c40a0bf7e30e5bd906e264f161a"
+    },
+    "backend/kaspa_address.py": {
+      "bytes": 2404,
+      "sha256": "ae9fe4057647f0318341e19c23ca0f0975757f6d7300942c0428cbd3af6f3c78"
+    },
+    "backend/lan_dag_runtime.py": {
+      "bytes": 19000,
+      "sha256": "2faa55269b3482c7c0e9f86cf7d3153227ad79d4d4baa7cf5f70719787b1632e"
+    },
+    "backend/live_mandate_store.py": {
+      "bytes": 17589,
+      "sha256": "359c80f75cc76ed9110ff22c2018a582e16a83ba2ed65d91b70f9ebfd1561d06"
+    },
+    "backend/marketplace_contract.py": {
+      "bytes": 34143,
+      "sha256": "67b42186ad9d26c6062746103516ba7f49f9e2a7543b126f79fc0b989e80e70a"
+    },
+    "backend/marketplace_discovery.py": {
+      "bytes": 17804,
+      "sha256": "ee18d6d31c9f8fb2cc69a1ff25d2c6da23e1b4673131b2fdcefed3de5eada8d9"
+    },
+    "backend/marketplace_media.py": {
+      "bytes": 2468,
+      "sha256": "b30f8958f500c20140c89a04a3990e3263ad23182f69fe180d6f9329f288b79e"
+    },
+    "backend/marketplace_protocols.py": {
+      "bytes": 9562,
+      "sha256": "a8c5b57ba7de0a4a48bcf69ab90ebafe994c983126b104a1857d01dbc51515b9"
+    },
+    "backend/network_profiles.py": {
+      "bytes": 7318,
+      "sha256": "6a2ca085ec3fbcdc88f300efe587184e344e44d7028010664b8dd6a1ee3ad3b1"
+    },
+    "backend/omni_assets.py": {
+      "bytes": 14708,
+      "sha256": "a3caa7e59e0366e597e4c7a063223134978e6a3bf379b8586b95b2e4c4ec9903"
+    },
+    "backend/omni_discovery.py": {
+      "bytes": 7716,
+      "sha256": "a7fefc693630572d3ddc8fdbb4858b0bbd56b3fdd4793c96e01387d90bd81053"
+    },
+    "backend/omni_rpc.py": {
+      "bytes": 10961,
+      "sha256": "7be11028b7a65b07274b6644758770cb60b30c328d9cebc14da37e0a0cd78309"
+    },
+    "backend/omni_wallet.py": {
+      "bytes": 13404,
+      "sha256": "f2f16f1cd6f22fca3ddb18db5651bbf1b553c65baab689c00ee0332dea4211f3"
+    },
+    "backend/platform_files.py": {
+      "bytes": 14133,
+      "sha256": "2e4eb6e9c1a762519e9221c479ccd81f863c8d61bdd02d5fbf4648105ec17a1f"
+    },
+    "backend/platform_process.py": {
+      "bytes": 6476,
+      "sha256": "f48568fc3befba5aabc5d29a2c3c0a41227d03f48effd861205ef4e783d8fbc5"
+    },
+    "backend/platform_support.py": {
+      "bytes": 12176,
+      "sha256": "b1c412b8fea79e830a80f37e26390057819d7a7f35884f75007362a654acc075"
+    },
+    "backend/portable_wallet_vault.py": {
+      "bytes": 2994,
+      "sha256": "da6cfd1e68fe9e271fb32c522ea6b15dab089c8d4b45fce252d183067aa62cb7"
+    },
+    "backend/research_desk.py": {
+      "bytes": 33910,
+      "sha256": "fb9c075e0a6949bdb2b96f43e1a2c1b2c1b0a10e6e03bebab16c17a1075bc049"
+    },
+    "backend/research_workbench.py": {
+      "bytes": 35341,
+      "sha256": "cab1c4047fec7e84235fd811f50d63d54c86cb94bc15bdfeca4f6a7961d31f08"
+    },
+    "backend/sensitive_ui_guard.py": {
+      "bytes": 10084,
+      "sha256": "b3d459108382dbcf7cdc4dde87682b309077c54346860cc36762bb66886b6493"
+    },
+    "backend/solana_metadata.py": {
+      "bytes": 1958,
+      "sha256": "696d64e3e9e492e0bf2e2bf44c896a4b919af1a8f3a20d8f743f8d26453261f3"
+    },
+    "backend/solana_transfers.py": {
+      "bytes": 23644,
+      "sha256": "b33e9ac0fdd1e1187d44a5cd413b1e84ea88d5b21d646b898c6e8aa5a58fadf9"
+    },
+    "backend/task_scoped_action_grant.py": {
+      "bytes": 21609,
+      "sha256": "6baf4361beb3b95aa59205da543cf9b7a2dd6f6669689b50163f8fb271516f1b"
+    },
+    "backend/terminal_approval.py": {
+      "bytes": 5733,
+      "sha256": "1824607edbdf59268dc20764b4960c01248ea1a71df921799f1e004f660bc286"
+    },
+    "backend/terminal_cli.py": {
+      "bytes": 46602,
+      "sha256": "c01f10b98178774a80b6b0986d6507dd5259096cd4cd647111d2a2a11a842629"
+    },
+    "backend/terminal_service.py": {
+      "bytes": 25816,
+      "sha256": "e10568e756ec44d51ea83cc4c9a34b58a0a63cd4deabbd646d10a139fd5c3ae2"
+    },
+    "backend/token_market_prices.py": {
+      "bytes": 19223,
+      "sha256": "4fef66b8006b19c23a7dfdb5bacc09af7749abdc84a6ce4976f7fdb9c7e47f51"
+    },
+    "backend/wallet_account_roles.py": {
+      "bytes": 3416,
+      "sha256": "e8a701870a3586d65d4030efc8ec102fbe05d9a0fce7e250dd9021cea28db7e8"
+    },
+    "backend/wallet_approval.py": {
+      "bytes": 13725,
+      "sha256": "2a8bc9379c83266529149f78354212aa68dd76fce705de470542814adc62bd43"
+    },
+    "backend/wallet_mnemonic.py": {
+      "bytes": 16429,
+      "sha256": "a5fd7ba4da79537263365cf7fe293aaddd06e4730df6a88e9f8532552429502b"
+    },
+    "backend/wallet_vault.py": {
+      "bytes": 14904,
+      "sha256": "9bb66a0d6143387d5f30dc35d125d20e6f93afbd89aa3e68ca0e3ab51873a87b"
+    },
+    "config/gg-palette.json": {
+      "bytes": 3217,
+      "sha256": "f3e52acc2d0f97285700e4a62b49b1717bc43d9edc0dd465dec4d13cf2899b1a"
+    },
+    "config/omni-networks.json": {
+      "bytes": 2310,
+      "sha256": "4b9df174b7c6896b9358e51f17559db6cdb3a049cc18da3df2211b9c5c9c679b"
+    },
+    "gg-cli.py": {
+      "bytes": 2285,
+      "sha256": "e042bafbd87940bb672ccd4208f2ba62590db02958c9e20f188d1e36f98c505a"
+    },
+    "install.py": {
+      "bytes": 4329,
+      "sha256": "e4208fa16b056f89e955bb06b6f937e9b2eccb983603803f40a2eed1f919d67c"
+    },
+    "install/linux.sh": {
+      "bytes": 153,
+      "sha256": "08a3cf0b9321bb3ebfc18abaad6fe3c51bcf219863a43982223db9bc7dd52a4d"
+    },
+    "install/termux.sh": {
+      "bytes": 237,
+      "sha256": "9127f5c234df9927b17294751280f28197db9a6e5d356169b88870ee2fb9cb98"
+    },
+    "install/windows.cmd": {
+      "bytes": 222,
+      "sha256": "d34d2636a0464ebd11360d6154a54ad83f79fb473c6890e82df29b40152f71f5"
+    },
+    "knowledge/dagoblin-lan.md": {
+      "bytes": 6646,
+      "sha256": "7f9a77458e7b4bfa69aaae9ee0f420756e0c8ea57bb51cb05cae7686cf58aadb"
+    },
+    "knowledge/dagoblin-launch-readiness.md": {
+      "bytes": 4721,
+      "sha256": "08c02d575ab9b93ede180658ec6971a7bb9a8542ea914b506f2de6db642cbbd5"
+    },
+    "knowledge/gg-network-live.md": {
+      "bytes": 11829,
+      "sha256": "221c769367a150176ba9e8813f516aca3d61138a46e3126fdee16b26db73a681"
+    },
+    "knowledge/gg-parallel-dag.md": {
+      "bytes": 8853,
+      "sha256": "d7d9626e90b480a35eecb937f755af60fa80f5f4c8fb02adbafc262fd4f016fa"
+    },
+    "knowledge/gg-terminal-palette.md": {
+      "bytes": 4528,
+      "sha256": "4bf822979c351de2d262d285df5621efdd2aa5f09352f3e0daed9b3203225c00"
+    },
+    "knowledge/research/dagoblin/README.md": {
+      "bytes": 5175,
+      "sha256": "633f2c4c840882d570e12d5e95b099ebd8b8a4e3050a99285e8c7f3dfb38445b"
+    },
+    "knowledge/research/dagoblin/benchmark-contract.json": {
+      "bytes": 4020,
+      "sha256": "b5bcf6a6c2e2d3c57f1cbbe10c31d958c4b5c48d79bcf5f6e27f59b54a5d9539"
+    },
+    "knowledge/research/dagoblin/broader-primary-sources.json": {
+      "bytes": 11911,
+      "sha256": "21fa05bf8462b3c75158f619fa37df210eac5a69a7b37f41549bd2b78b982694"
+    },
+    "knowledge/research/dagoblin/consensus-comparison.md": {
+      "bytes": 8421,
+      "sha256": "92c7a3cddc9813b50960e1f400d8bd1ec277e0fe1a765b6de7aba3e4f6fbad0b"
+    },
+    "knowledge/research/dagoblin/dagoblin-v0-spec.md": {
+      "bytes": 9641,
+      "sha256": "701b2cc98caaf46d1c0a3956d15062c963c25dcdb7d480b1ad70b2b67899046e"
+    },
+    "knowledge/research/dagoblin/kaspa-ghostdag-dagknight.md": {
+      "bytes": 27483,
+      "sha256": "c7e0a44b47caa2182ecf644bbbe8d475925d9e729541cb62975301815fb92dd6"
+    },
+    "knowledge/research/dagoblin/kaspa-primary-sources.json": {
+      "bytes": 49103,
+      "sha256": "e8b6ebf73c22884d51fe00d8d8ad49acd811ff02562d495ab44c333f08ea14c3"
+    },
+    "knowledge/research/dagoblin/quantum-and-layers.md": {
+      "bytes": 5427,
+      "sha256": "0efc3229368fde7098c3b14b01fa1fef4f4f7aaebfb972f0a3a97520ba2a0066"
+    },
+    "knowledge/research/dagoblin/security-neighbor-merkle.md": {
+      "bytes": 18124,
+      "sha256": "fc6779d9e6fee9c60e4eb9e224151d6d6541396c4cbdeda07fbf5080e8c9a3e6"
+    },
+    "knowledge/research/dagoblin/tooling-code-audit.md": {
+      "bytes": 11115,
+      "sha256": "d14ee78749b2315588c2a7d5ef2a513406ee06f6695bccf728dacea582ee78aa"
+    },
+    "knowledge/token-market-pricing.md": {
+      "bytes": 9281,
+      "sha256": "d4be080d7f7cd27e2f6c82e93fc5a87b04631450774c64aeb267941d5c743924"
+    },
+    "support/dagoblin/README.md": {
+      "bytes": 2201,
+      "sha256": "faf88ae9f7033060f218c83e49c66856d01f56e8a4d2e2086ebbdff2d852b9c5"
+    },
+    "support/dagoblin/analyze.py": {
+      "bytes": 27274,
+      "sha256": "6ba3f0a2be9082c602b69fb1026992a3be289241b353095a57c996f2fc87649d"
+    },
+    "support/dagoblin/capacity.example.json": {
+      "bytes": 363,
+      "sha256": "27ec703b341ea8978edaf542cff002d4841117184f067ce50074c4fb4f7fd57f"
+    },
+    "support/gg-cli/README.md": {
+      "bytes": 18679,
+      "sha256": "83591afe919e72fa55b338b26456f80bc919d1f8f512711e74c9a6f721149a37"
+    },
+    "support/gg-cli/bootstrap.py": {
+      "bytes": 3021,
+      "sha256": "3956e59a7831e1fee4776a94d83cad537bb5bda26f89631591b822cda8635b57"
+    },
+    "support/gg-cli/build_release.py": {
+      "bytes": 8805,
+      "sha256": "9343a9c36accb08de54f96cff819134c89ea4d995e865d12630f1c796b4b5e0f"
+    },
+    "support/gg-cli/install.py": {
+      "bytes": 4329,
+      "sha256": "e4208fa16b056f89e955bb06b6f937e9b2eccb983603803f40a2eed1f919d67c"
+    },
+    "support/gg-cli/install/linux.sh": {
+      "bytes": 153,
+      "sha256": "08a3cf0b9321bb3ebfc18abaad6fe3c51bcf219863a43982223db9bc7dd52a4d"
+    },
+    "support/gg-cli/install/termux.sh": {
+      "bytes": 237,
+      "sha256": "9127f5c234df9927b17294751280f28197db9a6e5d356169b88870ee2fb9cb98"
+    },
+    "support/gg-cli/install/windows.cmd": {
+      "bytes": 222,
+      "sha256": "d34d2636a0464ebd11360d6154a54ad83f79fb473c6890e82df29b40152f71f5"
+    },
+    "support/gg-cli/repository-README.md": {
+      "bytes": 5603,
+      "sha256": "3594c7c1db6c3a05abfbcefba769234063d63508540e2a637a24666e63281505"
+    },
+    "support/gg-cli/repository.gitignore": {
+      "bytes": 264,
+      "sha256": "5c0e17386f5716fadfbf2e6599769715a236e3069629e7087b421d3af8c55721"
+    },
+    "support/gg-cli/requirements-wallet.txt": {
+      "bytes": 132,
+      "sha256": "b03e2bc15100926b959428b632c5e23d1da1eb6a4680289450e1cb254e6c70ba"
+    },
+    "support/gg-cli/requirements.txt": {
+      "bytes": 260,
+      "sha256": "81f0343b1af3f09b599e64868a01525391dc933e3aa5a80351daa7d8ba2cd8bc"
+    },
+    "support/gg-consensus/README.md": {
+      "bytes": 18510,
+      "sha256": "b737e9ed065a3db94ce7fafc358ceb511be8d88d89a2c9d49489b654024cd903"
+    },
+    "support/gg-consensus/benchmark.py": {
+      "bytes": 26723,
+      "sha256": "6e77eaaee01d193f0c0ee1f4b3777001d3f109e5ebd7edbcc6ab47c24881d60e"
+    },
+    "support/gg-consensus/go.mod": {
+      "bytes": 7227,
+      "sha256": "0e3845c6fe64f7767f9f6e8346105b7ba4a6244c49593a4697c387c594f9c9a6"
+    },
+    "support/gg-consensus/go.sum": {
+      "bytes": 52721,
+      "sha256": "254f956e002ba248d2be5c814e0b7a530e85fe74626a65ee9e4c10c3dd0acf9d"
+    },
+    "support/gg-consensus/install_toolchain.py": {
+      "bytes": 15082,
+      "sha256": "35175f12226470e158573c8848c1129f799d025ace720cbc86435cc58e45a54c"
+    },
+    "support/gg-consensus/ledger.go": {
+      "bytes": 18307,
+      "sha256": "7eb3ffb3c7b82565d5f9c693db8cb75d9c0917d2512a414f8ddbe911cc026e04"
+    },
+    "support/gg-consensus/ledger_test.go": {
+      "bytes": 14010,
+      "sha256": "6b5cdcfd6a5e454fbdbd6f9b21229956a9695530253f29e3b16456726661948a"
+    },
+    "support/gg-consensus/light/wasm_main.go": {
+      "bytes": 1480,
+      "sha256": "0d1fd071babb954331a32ff064efd431f1400ad20b213a74258eb16603cb8457"
+    },
+    "support/gg-consensus/main.go": {
+      "bytes": 11922,
+      "sha256": "44032c0714775384b1d856c65717acbab3b041fb8f4e412bb0f78003c1205890"
+    },
+    "support/gg-consensus/toolchain.json": {
+      "bytes": 400,
+      "sha256": "58eeefd94f086390d223948d70e886b4441ff5080ac9a74be67b09e5903446bf"
+    },
+    "support/gg-consensus/verify.go": {
+      "bytes": 7138,
+      "sha256": "2dee9e9e986e44de2a7d4a2757e5894ec73c1d066475560f3aff9a44595b8a2a"
+    }
+  }
+}
