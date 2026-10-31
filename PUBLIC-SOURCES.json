@@ -61,16 +61,16 @@
       "sha256": "1061f6c6b088770f5b1d6e682c9127d57d066c1332c02b8230b84ed112d376b1"
     },
     "backend/gg_lan_dag.py": {
-      "bytes": 111885,
-      "sha256": "8fdabfe9feb839608e38de2d1a5af304a05492ad3c827ea90637bfb5fd316c81"
+      "bytes": 119042,
+      "sha256": "62decd73812a75b838eb27ec8d4a8fa2864662e5f8b7ba7df084cd1a6a16cb81"
     },
     "backend/gg_lan_test_tokens.py": {
       "bytes": 12788,
       "sha256": "7b6db2b814acccdb87f104121767393fc0bf038703a029b20b474503205c1768"
     },
     "backend/gg_parallel_dag.py": {
-      "bytes": 89562,
-      "sha256": "fdfe53ebc8d288faca1c0f61f6f696c617df7bc95838f89d24b950f28daa65cf"
+      "bytes": 90144,
+      "sha256": "31a76c83d1fbc577e9b924387af64167a83845e6a7e155eabdf821ca403cf041"
     },
     "backend/gg_testnet_process.py": {
       "bytes": 7868,
@@ -169,12 +169,12 @@
       "sha256": "1824607edbdf59268dc20764b4960c01248ea1a71df921799f1e004f660bc286"
     },
     "backend/terminal_cli.py": {
-      "bytes": 50268,
-      "sha256": "822c78bd2715d43f7fe975a48e02b27d566cdbeb790c5c34c700f88eaba431a7"
+      "bytes": 50530,
+      "sha256": "b8ae201c3f0ce985811b23fc6a246c4292f40075087ecc62a40733de3051d910"
     },
     "backend/terminal_service.py": {
-      "bytes": 25836,
-      "sha256": "01a374dcf8064496f11c9530e19ecb91676c219b2f63ce1dbdf1907a00d70bd3"
+      "bytes": 27162,
+      "sha256": "5fda2058b63690f55bce5d294fa6830dec4fc9588c0a38e4684f1cbe3595c4f7"
     },
     "backend/token_market_prices.py": {
       "bytes": 19223,
@@ -225,8 +225,8 @@
       "sha256": "d34d2636a0464ebd11360d6154a54ad83f79fb473c6890e82df29b40152f71f5"
     },
     "knowledge/dagoblin-lan.md": {
-      "bytes": 14550,
-      "sha256": "729c31ef0894df728a66829d7112e6d2e2ca4399da3764b7178a0e8192bc38b2"
+      "bytes": 18260,
+      "sha256": "6972cdb53da008a53467d47fbd8fc8274e1db366959acee9f9ac9f9a3caea227"
     },
     "knowledge/dagoblin-launch-readiness.md": {
       "bytes": 5064,
@@ -301,16 +301,16 @@
       "sha256": "27ec703b341ea8978edaf542cff002d4841117184f067ce50074c4fb4f7fd57f"
     },
     "support/gg-cli/README.md": {
-      "bytes": 20663,
-      "sha256": "dfb8b7d4c74187aa88e384026e15deb640f8dca9a751f3ed520aca83fcc8f7fe"
+      "bytes": 21084,
+      "sha256": "87c6071d1efc50076fa002ac1f0cc7d4ff2b97188a8779120e01525ac19fabcb"
     },
     "support/gg-cli/bootstrap.py": {
       "bytes": 3021,
       "sha256": "3956e59a7831e1fee4776a94d83cad537bb5bda26f89631591b822cda8635b57"
     },
     "support/gg-cli/build_release.py": {
-      "bytes": 9003,
-      "sha256": "f7a9041fb2f41da89d566ba3c5ea669c7ab229f805d0d56d9ca828b30e066886"
+      "bytes": 9054,
+      "sha256": "6e205c8abf21e95d5d3f1a9202d7da64c6a3dab8f640605617f98202e4fd623e"
     },
     "support/gg-cli/install.py": {
       "bytes": 4329,
@@ -395,6 +395,10 @@
     "backend/gg_dag_wire.py": {
       "bytes": 5794,
       "sha256": "97f096fea45692de118c3f635f98e2c54ec555063d3db90c9b610743282dfef8"
+    },
+    "backend/local_node_observation.py": {
+      "bytes": 9786,
+      "sha256": "1050cf2454b01b55947638f8b337a8a1e18669052894ba591149407abb03575d"
     }
   }
 }
