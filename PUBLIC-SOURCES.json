@@ -61,8 +61,8 @@
       "sha256": "1061f6c6b088770f5b1d6e682c9127d57d066c1332c02b8230b84ed112d376b1"
     },
     "backend/gg_lan_dag.py": {
-      "bytes": 123082,
-      "sha256": "45c6e1b20346e3b2aa54494caa84d0771217e807096641ee309e142af2f2fca8"
+      "bytes": 125790,
+      "sha256": "49512c2224f7635369a9f01e4fdc92fe441c29126b78d034c59caede25795d14"
     },
     "backend/gg_lan_test_tokens.py": {
       "bytes": 12788,
@@ -169,8 +169,8 @@
       "sha256": "1824607edbdf59268dc20764b4960c01248ea1a71df921799f1e004f660bc286"
     },
     "backend/terminal_cli.py": {
-      "bytes": 51374,
-      "sha256": "6eadd62569e80ed09a96069613393d13c4f5d7b03cf31edf88d50c11ac523e82"
+      "bytes": 52208,
+      "sha256": "251c9c5e581329d354e29025ff0e9a789f3a773785159665c389462bc2d2e80c"
     },
     "backend/terminal_service.py": {
       "bytes": 27162,
@@ -225,8 +225,8 @@
       "sha256": "d34d2636a0464ebd11360d6154a54ad83f79fb473c6890e82df29b40152f71f5"
     },
     "knowledge/dagoblin-lan.md": {
-      "bytes": 20923,
-      "sha256": "3f008c0d1c9e3d22a23e68e54cfab85634b6d4493167268c163af76f0ce4ff35"
+      "bytes": 22744,
+      "sha256": "a2664321e5fd408e863f8a42abed7b5b73873bafdb9135735aade3ed1003329f"
     },
     "knowledge/dagoblin-launch-readiness.md": {
       "bytes": 5064,
