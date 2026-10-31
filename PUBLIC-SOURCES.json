@@ -61,8 +61,8 @@
       "sha256": "1061f6c6b088770f5b1d6e682c9127d57d066c1332c02b8230b84ed112d376b1"
     },
     "backend/gg_lan_dag.py": {
-      "bytes": 119042,
-      "sha256": "62decd73812a75b838eb27ec8d4a8fa2864662e5f8b7ba7df084cd1a6a16cb81"
+      "bytes": 119583,
+      "sha256": "5ce87563b3f7284d4f3fdbda96906bd5889eba3b68b3079d6f315ad9f66ca56f"
     },
     "backend/gg_lan_test_tokens.py": {
       "bytes": 12788,
@@ -225,8 +225,8 @@
       "sha256": "d34d2636a0464ebd11360d6154a54ad83f79fb473c6890e82df29b40152f71f5"
     },
     "knowledge/dagoblin-lan.md": {
-      "bytes": 18260,
-      "sha256": "6972cdb53da008a53467d47fbd8fc8274e1db366959acee9f9ac9f9a3caea227"
+      "bytes": 19473,
+      "sha256": "785cf89dc667edbbe4daa3fbe527cfab87891df1aea65720139903b5673a7c58"
     },
     "knowledge/dagoblin-launch-readiness.md": {
       "bytes": 5064,
