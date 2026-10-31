@@ -61,8 +61,8 @@
       "sha256": "1061f6c6b088770f5b1d6e682c9127d57d066c1332c02b8230b84ed112d376b1"
     },
     "backend/gg_lan_dag.py": {
-      "bytes": 90871,
-      "sha256": "6a97ab081a2eb82c4e7e4813412baca273efe23faad0ba6b4dff1355ce51f8d3"
+      "bytes": 100029,
+      "sha256": "038e83a3ed79ad25415a82068a36a35e28b2cea125327c34279c8b08e9efe905"
     },
     "backend/gg_lan_test_tokens.py": {
       "bytes": 12788,
